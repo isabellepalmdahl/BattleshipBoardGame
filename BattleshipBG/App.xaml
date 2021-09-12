@@ -1,0 +1,14 @@
+﻿<Application x:Class="BattleshipBG.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BattleshipBG"
+             xmlns:viewModels="clr-namespace:BattleshipBG.ViewModels"
+             xmlns:views="clr-namespace:BattleshipBG.Views"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate 
+            DataType="{x:Type viewModels:GameViewModel}">
+            <views:GameView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
